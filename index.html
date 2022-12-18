@@ -22,13 +22,26 @@ div.transbox p {
   margin: 5%;
   font-weight: bold;
   color: #000000;
-}
-  
+} 
 </style>
 </head>
 <body>
+<script>
+var date = new Date("Aug 27,2012").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";}
+  、
 <div class="transbox">  
-  <p><center>To memorize our trip so far. </center></p>
+<p><center>To memorize our trip so far. </center></p>
+<p><center> 我们在一起这么久了呀 </center></p>
+<p id="timer"><center></center></p>
 </body> 
 </style></body>
 </html>
