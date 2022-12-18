@@ -31,12 +31,11 @@ div.transbox p {
 <div class="transbox">  
 <p><center>To memorize our trip so far. </center></p>
 <p><center> 我们在一起这么久了呀 </center></p>
-<p id="timer">test</p>
+<p id="timer" style="font-size:1.3em"><center></center></p>
   
   
 <script>
 var start_date = new Date("Aug 27, 2012 00:00:00").getTime();
-document.getElementById("timer").innerHTML =   "s ";
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance =  now - start_date;
